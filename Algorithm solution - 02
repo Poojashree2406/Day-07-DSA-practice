@@ -1,0 +1,11 @@
+LeetCode 92 — Reverse Linked List II
+
+Difficulty: Medium
+Pattern: Partial Reversal
+
+Algorithm
+Create a dummy node.
+Move prev to the node before position left.
+Reverse nodes from left to right.
+Connect the reversed section back to the list.
+Return dummy.next.
