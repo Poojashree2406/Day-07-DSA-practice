@@ -9,7 +9,7 @@ Platform: LeetCode
 
 The objective of this practice session is to solve advanced Linked List problems and improve understanding of pointer manipulation, linked-list reversal, HashMap usage, doubly linked lists, caching techniques, heaps, and sorting algorithms.
 
-. Problems Practiced
+2. Problems Practiced
 Problem 1 — LeetCode 23: Merge k Sorted Lists
 
 Difficulty: Hard
