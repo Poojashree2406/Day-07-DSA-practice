@@ -1,0 +1,27 @@
+LeetCode 460 — LFU Cache
+Algorithm
+
+Use two HashMaps:
+
+key → Node
+frequency → Doubly Linked List
+
+Each node stores:
+
+key
+value
+frequency
+
+For get:
+
+Find the node.
+Remove it from its current frequency list.
+Increase frequency.
+Add it to the new frequency list.
+
+For put:
+
+Update existing key if present.
+Otherwise, if capacity is full, remove the least frequently used node.
+If frequencies are equal, remove the least recently used node.
+Insert the new node with frequency 1.
