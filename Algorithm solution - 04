@@ -1,0 +1,11 @@
+LeetCode 203 — Remove Linked List Elements
+
+Difficulty: Easy
+Pattern: Linked List Deletion
+
+Algorithm
+Create a dummy node before head.
+Traverse the list.
+If the next node contains the target value, skip it.
+Otherwise move forward.
+Return dummy.next.
