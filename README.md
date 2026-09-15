@@ -146,5 +146,51 @@ Recursively sort both halves.
 Merge the sorted halves.
 Return the sorted list.
 
-Time Complexity: O(n log n)
+Time Complexity: O(n log. Important Concepts Learned
+Fast and Slow Pointers
+
+Used to find the middle of a linked list efficiently.
+
+Dummy Node
+
+Simplifies insertion, deletion, reversal, and boundary cases.
+
+Linked List Reversal
+
+Important for problems such as reversing groups and sorting.
+
+HashMap
+
+Provides approximately constant-time lookup and is useful for cache and deep-copy problems.
+
+Doubly Linked List
+
+Allows efficient insertion and deletion from both ends.
+
+Priority Queue
+
+Useful for efficiently merging multiple sorted linked lists.
+
+Merge Sort
+
+Suitable for sorting linked lists because linked lists can be split and merged efficiently.
+
+4. Test Cases
+
+The following cases were considered during testing:
+
+Test Case	Purpose
+Empty list	Validate null handling
+Single node	Validate minimum input
+Two nodes	Validate pointer operations
+Odd-length list	Validate middle operations
+Even-length list	Validate middle operations
+Duplicate values	Validate repeated data
+Multiple sorted lists	Test heap merging
+k = 1	Test group reversal boundary
+k > list length	Test incomplete group
+Cache capacity = 0	Test cache boundary
+Cache capacity = 1	Test eviction
+Null random pointer	Test deep copy
+Unsorted list	Test merge sort n)
 Space Complexity: O(log n) due to recursion.
