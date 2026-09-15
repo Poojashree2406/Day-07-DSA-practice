@@ -1,0 +1,12 @@
+Test Cases
+A: 4 -> 1 \
+          8 -> 4 -> 5
+B: 5 -> 6 -> 1 /
+Output: Node 8
+
+
+A: 1 -> 2 -> 3
+B: 4 -> 5
+Output: null
+
+Complexity: O(n + m) time, O(1) space
