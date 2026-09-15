@@ -1,0 +1,12 @@
+LeetCode 24 — Swap Nodes in Pairs
+
+Difficulty: Medium
+Pattern: Pointer Manipulation
+
+Algorithm
+Create a dummy node.
+Take two nodes at a time.
+Swap their links.
+Move to the next pair.
+Return dummy.next.
+
