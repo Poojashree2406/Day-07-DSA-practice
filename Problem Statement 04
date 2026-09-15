@@ -1,0 +1,47 @@
+The main difficulty is that a node can be removed even when it is the head of the linked list.
+
+To handle this cleanly, we create a dummy node before head:
+
+dummy → 1 → 2 → 6 → 3 → 4 → 5 → 6
+↑
+head
+
+Now every node, including the original head, has a previous node. This means we can use the same deletion logic throughout the list.
+
+We maintain two pointers:
+
+prev → node before the current node
+curr → node currently being checked
+
+When curr->val == val, simply skip curr:
+
+prev → curr → next
+
+becomes
+
+prev ─────────→ next
+
+If the value doesn't match, move both pointers forward.
+
+Approach
+Create a dummy node pointing to head.
+Set prev = dummy and curr = head.
+Traverse the list using curr.
+If curr->val == val:
+Remove it using prev->next = curr->next.
+Do not move prev, because another matching node could immediately follow.
+Otherwise:
+Move prev to curr.
+Move curr to the next node.
+Return dummy->next as the new head.
+🔑 Key idea
+if (curr->val == val)
+prev->next = curr->next;
+else
+prev = curr;
+
+curr = curr->next;
+
+Complexity
+Time complexity:O(n) — we visit every node once.
+Space complexity:O(1) — only a few pointers are used.
