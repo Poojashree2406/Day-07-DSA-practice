@@ -1,0 +1,11 @@
+LeetCode 876 — Middle of the Linked List
+
+Difficulty: Easy
+Pattern: Fast & Slow Pointers
+
+Algorithm:
+Set slow and fast to head.
+Move slow one step.
+Move fast two steps.
+When fast reaches the end, slow is at the middle.
+Return slow.
