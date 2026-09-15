@@ -1,0 +1,17 @@
+Each bucket contains all strings having the same frequency.
+
+For inc:
+
+Find the key.
+Move it to the next frequency bucket.
+Create the bucket if needed.
+
+For dec:
+
+Decrease the frequency.
+Move it to the previous bucket.
+Remove the key if frequency becomes zero.
+
+getMaxKey() returns from the last bucket.
+
+getMinKey() returns from the first bucket.
