@@ -1,0 +1,9 @@
+Difficulty: Easy
+Pattern: Two Pointers
+
+Algorithm
+Set p1 = headA, p2 = headB.
+Move both pointers one step at a time.
+When p1 reaches the end, move it to headB.
+When p2 reaches the end, move it to headA.
+They will meet at the intersection node or both become null.
